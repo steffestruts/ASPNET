@@ -10,6 +10,7 @@
 html, body {
     background-color: var(--background-color);
     color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -17,6 +18,7 @@ html, body {
 }
 
 .wrapper {
+    align-items: center;
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100dvh;
@@ -42,6 +44,34 @@ html, body {
     }
 }
 
+header {
+    margin-bottom: 2rem;
+}
+
+header, footer {
+    background-color: hotpink;
+    color: #FFD5EA;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 3rem 0;
+    text-align: center;
+}
+
 .user-list-item + .user-list-item {
-    margin-bottom: 1rem;
+    border-top: 1px dashed #cdcdcd;
+}
+
+.user-list-item {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.user-list-item:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.email {
+    color: dimgray;
+    font-weight: 400;
 }
