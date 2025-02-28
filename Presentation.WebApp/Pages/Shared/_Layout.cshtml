@@ -11,14 +11,11 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
-			<a asp-page="/Index">Home</a>
-            <a asp-page="/Contact">Contact</a>
-        </header>
+		@await Html.PartialAsync("Partials/_HeaderPartial")
 		<main role="main">
 			@RenderBody()
 		</main>
-        <footer>Footer</footer>
+		@await Html.PartialAsync("Partials/_FooterPartial")
     </div>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)

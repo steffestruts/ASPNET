@@ -4,6 +4,8 @@
     ViewData["Title"] = "Index";
 }
 
-<div class="container">
-	<h1>Index</h1>
-</div>
+<section id="users">
+    <div class="container">
+		@await Html.PartialAsync("Partials/Components/_UserList", Model.Users)
+    </div>
+</section>

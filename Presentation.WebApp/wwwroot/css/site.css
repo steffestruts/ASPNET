@@ -41,3 +41,7 @@ html, body {
         max-width: 1320px;
     }
 }
+
+.user-list-item + .user-list-item {
+    margin-bottom: 1rem;
+}
